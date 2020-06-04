@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-path_images = 'c:/Git/images/'
+path_images = f'C:/GitHub/PythonSem2/imagesPart2/src/'
 images = []
 canvas = Image.new('RGB', (1600, 600))
 image_drawer = ImageDraw.Draw(canvas)
@@ -19,5 +19,5 @@ for i, image in enumerate(images):
                       font=ImageFont.truetype("arial.ttf", size=22), fill=(25, 255, 0)
                       )
 
-canvas.save(path_images + 'result/img.jpg')
+canvas.save(path_images + 'out/img.jpg')
 canvas.show()
